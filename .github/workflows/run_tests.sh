@@ -7,6 +7,36 @@ echo "dftd3_DFTD3PATH = './pyscf/lib/deps/lib'" >> .pyscf_conf.py
 
 nosetests pyscf/ -v --with-timer --with-cov --cov-report xml --cov-report term --cov-config .coveragerc --cov pyscf \
     --exclude-dir=examples --exclude-dir=pyscf/pbc/grad \
+    --exclude-dir=pyscf/adc/test \
+    --exclude-dir=pyscf/agf2/test \
+    --exclude-dir=pyscf/ao2mo/test \
+    --exclude-dir=pyscf/ci/test \
+    --exclude-dir=pyscf/eph/test \
+    --exclude-dir=pyscf/fci/test \
+    --exclude-dir=pyscf/geomopt/test \
+    --exclude-dir=pyscf/grad/test \
+    --exclude-dir=pyscf/gto/test \
+    --exclude-dir=pyscf/gw/test \
+    --exclude-dir=pyscf/hessian/test \
+    --exclude-dir=pyscf/lo/test \
+    --exclude-dir=pyscf/mcscf/test \
+    --exclude-dir=pyscf/mp/test \
+    --exclude-dir=pyscf/mrpt/test \
+    --exclude-dir=pyscf/qmmm/test \
+    --exclude-dir=pyscf/scf/test \
+    --exclude-dir=pyscf/solvent/test \
+    --exclude-dir=pyscf/soscf/test \
+    --exclude-dir=pyscf/symm/test \
+    --exclude-dir=pyscf/tools/test \
+    --exclude-dir=pyscf/x2c/test \
+    --exclude-dir=pyscf/grad/test \
+    --exclude-dir=pyscf/mp/test \
+    --exclude-dir=pyscf/tdscf/test \
+    --exclude-dir=pyscf/tools/test \
+    --exclude-dir=pyscf/x2c/test \
+    --exclude-dir=pyscf/cc/test \
+    --exclude-dir=pyscf/dft/test \
+    --exclude-dir=pyscf/tdscf/test \
     -e test_bz \
     -e h2o_vdz \
     -e test_mc2step_4o4e \
