@@ -8,7 +8,7 @@
 #  yangcal
 #  maxscheurer
 #
-name: linux-3.6
+name: linux-3.8
 
 #FIXME: workflow dependency not working on non-default branch?
 #on:
